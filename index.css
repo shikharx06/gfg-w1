@@ -21,8 +21,9 @@ body {
 
 #login-container {
   height: max-content;
+  max-width: 30rem;
   width: max-content;
-  padding: 2rem;
+  padding: 1.275rem;
   border-radius: 5px;
   background: var(--background);
   position: relative;
@@ -69,19 +70,22 @@ h1 {
 
 .social {
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
   align-items: center;
   width: calc(100% - 40px);
   margin: 0 auto;
 }
-a {
+
+.social > a {
+  text-decoration: none;
+  text-align: center;
   text-align: center;
   border: solid 2px var(--accent);
-  width: 75px;
-  padding: 5px 0;
+  padding: 5px 1rem;
   border-radius: 5px;
 }
-a:hover {
+
+.social > a:hover {
   background: var(--accent);
   color: var(--background);
   cursor: pointer;
